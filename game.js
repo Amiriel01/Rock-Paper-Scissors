@@ -6,21 +6,24 @@ function getComputerChoice() {
     let computerSelection = Math.floor(Math.random() * choices.length);
     return choices[computerSelection];
 }
-console.log(getComputerChoice()) // check to see if working on page //
+//console.log(getComputerChoice()) // check to see if working on page //
 
 // User will select a choice //
 
-function playerSelection(choices) {
-    let playerChoice = prompt("Choose Rock, Paper, or Scissors").toUpperCase();
-    
-    // alert(playerChoice); Use to check if prompt is working //
+function playerSelection() {
+
+    return prompt("Choose Rock, Paper, or Scissors").toUpperCase();
+
+    //alert(playerChoice); Use to check if prompt is working //
 }
-console.log(playerSelection())  // check to see if working on page //
+//console.log(playerSelection())  // check to see if working on page //
 
 // Game will play a single round//
 // Winner/Loser messages will appear //
 
 function playRound(playerChoice, computerSelection) {
+    console.log(playerChoice);
+    console.log(computerSelection);
     if (playerChoice === computerSelection) {
         alert("It's a tie!");
     }
@@ -29,9 +32,6 @@ function playRound(playerChoice, computerSelection) {
         if (computerSelection === "SCISSORS") {
             alert("You Win! Rock beats scissors everytime!")
         }
-    }
-
-    else if (playerChoice === "ROCK") {
         if (computerSelection === "PAPER") {
             alert("You Lose! Paper beats Rock everytime!")
         }
@@ -41,30 +41,38 @@ function playRound(playerChoice, computerSelection) {
         if (computerSelection === "PAPER") {
             alert("You Win! Scissors beat Paper everytime!")
         }
-    }
 
-    else if (playerChoice === "Scissors") {
         if (computerSelection === "ROCK") {
             alert("You Lose! Rock beats Scissors everytime!")
         }
     }
 
-
     else if (playerChoice === "PAPER") {
         if (computerSelection === "SCISSORS") {
             alert("You Lose! Scissors beat Paper everytime!")
         }
-    }
 
-    else if (playerChoice === "PAPER") {
         if (computerSelection === "ROCK") {
             alert("You Win! Paper beats Rock everytime!")
         }
-
-    else {
-            alert("Check your spelling!")
-        }
     }
 
-console.log(playRound());
+    else {
+        alert("Check your spelling!")
+    }
 }
+
+//console.log(playRound());//
+let currentPlayerChoice = playerSelection();
+let currentComputerChoice = getComputerChoice();
+playRound(currentPlayerChoice, currentComputerChoice);
+
+//Game will play 4 more rounds//
+function game() {
+    playRound(playerSelection(), getComputerChoice());
+    playRound(playerSelection(), getComputerChoice());
+    playRound(playerSelection(), getComputerChoice());
+    playRound(playerSelection(), getComputerChoice());
+}
+
+game();
