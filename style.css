@@ -1,0 +1,36 @@
+* {
+    border: 1px solid white;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Luminari, "Comic Sans MS", sans-serif;
+}
+
+.luck {
+    text-align: center;
+    font-size: 84px;
+    font-weight: 900;
+    width: 800px;
+    background-color: #004526;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(238, 238, 154);
+    margin-bottom: 16px;
+
+}
+
+.instruct {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #004526;
+    background-color: rgb(238, 238, 154);
+}

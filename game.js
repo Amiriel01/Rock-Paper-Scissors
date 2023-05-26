@@ -12,7 +12,11 @@ function getComputerChoice() {
 
 function playerSelection() {
 
-    return prompt("Choose Rock, Paper, or Scissors").toUpperCase();
+    
+    
+    
+    //return prompt("Choose Rock, Paper, or Scissors").toUpperCase();//
+
 
     //alert(playerChoice); Use to check if prompt is working //
 }
@@ -57,9 +61,9 @@ function playRound(playerChoice, computerSelection) {
         }
     }
 
-    else {
+    /*else {
         alert("Check your spelling!")
-    }
+    }*/
 }
 
 //console.log(playRound());//
@@ -68,11 +72,11 @@ let currentComputerChoice = getComputerChoice();
 playRound(currentPlayerChoice, currentComputerChoice);
 
 //Game will play 4 more rounds//
-function game() {
+/*function game() {
     playRound(playerSelection(), getComputerChoice());
     playRound(playerSelection(), getComputerChoice());
     playRound(playerSelection(), getComputerChoice());
     playRound(playerSelection(), getComputerChoice());
 }
 
-game();
+game();*/
