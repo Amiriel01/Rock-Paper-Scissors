@@ -1,3 +1,6 @@
+//Computer prompt player name//
+
+
 // Computer will select a random choice//
 
 const choices = ["ROCK", "PAPER", "SCISSORS"];
@@ -10,20 +13,28 @@ function getComputerChoice() {
 
 // User will select a choice //
 
-function playerSelection() {
 
-    
-    
-    
+function playerSelection() {
     //return prompt("Choose Rock, Paper, or Scissors").toUpperCase();//
 
-
-    //alert(playerChoice); Use to check if prompt is working //
+   // alert(playerChoice); //Use to check if prompt is working //
 }
 //console.log(playerSelection())  // check to see if working on page //
 
 // Game will play a single round//
 // Winner/Loser messages will appear //
+
+let buttons = document.querySelectorAll(".button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const img = button.querySelector("img");
+        playerChoice = img.alt;
+        playRound(playerChoice, computerSelection);
+    });
+});
+
+
 
 function playRound(playerChoice, computerSelection) {
     console.log(playerChoice);
@@ -61,15 +72,16 @@ function playRound(playerChoice, computerSelection) {
         }
     }
 
-    /*else {
+    else {
         alert("Check your spelling!")
-    }*/
+    }
 }
-
-//console.log(playRound());//
 let currentPlayerChoice = playerSelection();
 let currentComputerChoice = getComputerChoice();
 playRound(currentPlayerChoice, currentComputerChoice);
+
+//console.log(playRound());//
+
 
 //Game will play 4 more rounds//
 /*function game() {
