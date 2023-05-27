@@ -29,19 +29,32 @@ body {
     color: #004526;
     background-color: rgb(238, 238, 154);
     border: 2px solid #004526
-    
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.buttons img {
+.action-button#rock {
+    background-image: url("images/rock.jpg");
+}
+
+.action-button#paper {
+    background-image: url("images/paper1.jpg");
+}
+
+.action-button#scissors {
+    background-image: url("images/scissors.jpg");
+}
+
+.action-button {
     width: 250px;
     height: 250px;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .buttons {
@@ -66,7 +79,8 @@ button:hover {
 }
 
 #return {
-    margin-bottom: 36px;;
+    margin-bottom: 36px;
+    ;
     text-align: center;
     font-size: 48px;
     font-weight: 700;
@@ -76,14 +90,13 @@ button:hover {
     color: #004526;
     background-color: rgb(238, 238, 154);
     border: 2px solid #004526
-    
 }
 
 .scoreBox {
     text-align: center;
     font-size: 48px;
     font-weight: 900;
-    width: 600px;
+    width: 800px;
     background-color: #004526;
     display: block;
     margin-left: auto;
@@ -97,5 +110,5 @@ button:hover {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    
+
 }

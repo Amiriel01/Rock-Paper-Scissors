@@ -16,13 +16,6 @@ function getComputerChoice() {
 
 // User will select a choice //
 
-//function playerSelection() {
-//return prompt("Choose Rock, Paper, or Scissors").toUpperCase();//
-
-// alert(playerChoice); //Use to check if prompt is working //
-//}
-
-// Game will play a single round//
 // Winner/Loser messages will appear //
 
 let buttons = document.querySelectorAll(".action-button");
@@ -48,20 +41,33 @@ buttons.forEach(button => {
     })
 });
 
+function updateUI(result) {
+    document.getElementById("return").innerHTML = result;
+    document.getElementById("win").innerHTML = playerWins;
+    document.getElementById("lose").innerHTML = playerLosses;
+    document.getElementById("tie").innerHTML = playerTies;
+    //ID from html, and =result, playerWins... from global//
+    //Disable buttons after five rounds//
+    if (playerWins + playerLosses + playerTies >= 5) {
+        buttons.forEach(button => {
+            button.setAttribute("disabled", true);
+        })
 
-let result="scores"
-function updateUI(scores) {
-    document.getElementById("return").innerHTML = scores;
-    if (win) {
-        win++;
-    }
-    else if (lose) {
-        lose++;
-    }
-    else {
+        let message;
 
+        if (playerWins > playerLosses) {
+            message = "You won! Refresh the page to play again!"
+        }
+
+        else if (playerLosses > playerWins) {
+            message = "You lost! Refresh the page to play again!"
+        }
+
+        else {
+            message = "It's a tie! Refresh the page to play again!"
+        }
+        document.getElementById("return").innerHTML = message;
     }
-    updateUI(scores);
 }
 
 
@@ -102,9 +108,6 @@ function playRound(playerChoice, computerSelection) {
         }
     }
 }
-
-
-//}
 
 document.getElementById('return');
 
