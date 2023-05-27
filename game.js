@@ -4,6 +4,7 @@ let playerChoice;
 let playerWins = 0;
 let playerLosses = 0;
 let playerTies = 0;
+
 // Computer will select a random choice//
 
 const choices = ["ROCK", "PAPER", "SCISSORS"];
@@ -25,7 +26,8 @@ function getComputerChoice() {
 // Winner/Loser messages will appear //
 
 let buttons = document.querySelectorAll(".action-button");
-console.log(buttons);
+let score = document.querySelector("#scores");
+//console.log(buttons);
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         let userValue = button.getAttribute("value");
@@ -46,10 +48,22 @@ buttons.forEach(button => {
     })
 });
 
-function updateUI(gameResult) {
-    document.getElementById("return").innerHTML = gameResult;
-    
+
+let result="scores"
+function updateUI(scores) {
+    document.getElementById("return").innerHTML = scores;
+    if (win) {
+        win++;
+    }
+    else if (lose) {
+        lose++;
+    }
+    else {
+
+    }
+    updateUI(scores);
 }
+
 
 function playRound(playerChoice, computerSelection) {
     /*console.log(playerChoice);
@@ -61,6 +75,7 @@ function playRound(playerChoice, computerSelection) {
 
     else if (playerChoice === "ROCK") {
         if (computerSelection === "SCISSORS") {
+
             return ("You Win! Rock beats scissors everytime!")
         }
         if (computerSelection === "PAPER") {
@@ -87,9 +102,11 @@ function playRound(playerChoice, computerSelection) {
         }
     }
 }
+
+
 //}
 
-document.getElementById('return')
+document.getElementById('return');
 
 
 //let currentPlayerChoice="ROCK";

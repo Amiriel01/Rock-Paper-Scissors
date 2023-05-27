@@ -21,7 +21,7 @@ body {
 
 .instruct {
     text-align: center;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     display: block;
     margin-left: auto;
@@ -54,16 +54,21 @@ body {
 
 button {
     border: 8px solid #F0E68C;
-    
+    cursor: pointer;
 }
 
 button:active {
     border: 8px solid #004526;
 }
 
+button:hover {
+    transform: scale(1.1);
+}
+
 #return {
+    margin-bottom: 36px;;
     text-align: center;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     display: block;
     margin-left: auto;
@@ -71,5 +76,26 @@ button:active {
     color: #004526;
     background-color: rgb(238, 238, 154);
     border: 2px solid #004526
+    
+}
+
+.scoreBox {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    width: 600px;
+    background-color: #004526;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(238, 238, 154);
+    margin-bottom: 16px;
+    border: 4px solid rgb(238, 238, 154)
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
     
 }
