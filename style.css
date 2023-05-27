@@ -1,7 +1,3 @@
-/* {
-    border: 1px solid white;
-}*/
-
 body {
     background-image: url(images/background.jpg);
     background-size: 100%;
@@ -20,7 +16,7 @@ body {
     margin-right: auto;
     color: rgb(238, 238, 154);
     margin-bottom: 16px;
-
+    border: 4px solid rgb(238, 238, 154)
 }
 
 .instruct {
@@ -59,5 +55,21 @@ body {
 button {
     border: 8px solid #F0E68C;
     
+}
+
+button:active {
+    border: 8px solid #004526;
+}
+
+#return {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #004526;
+    background-color: rgb(238, 238, 154);
+    border: 2px solid #004526
     
 }
