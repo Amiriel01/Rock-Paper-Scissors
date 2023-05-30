@@ -1,4 +1,10 @@
 # Rock-Paper-Scissors
+
+Objective:
+
+I am creating a Rock, Paper, Scissors game to utilize some skills that I've learned in html, css, and JavaScript. This is my first JavaScript project.
+
+Completed Game Images:
 I created a rock, paper, scissors game in JavaScript.
 I used the Pexels site for the background image.
 I found the scissors/clover img on the blog "This Mom's Confessions".
