@@ -5,7 +5,12 @@ Objective:
 I am creating a Rock, Paper, Scissors game to utilize some skills that I've learned in html, css, and JavaScript. This is my first JavaScript project.
 
 Completed Game Images:
+
+Before Game Starts:
 ![](images/completedgame.png)
+After Player's Move:
+![](images/completewin.png)
+After Game Completes:
 ![](images/completed%20play.png)
 
 Game Features:
