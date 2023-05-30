@@ -23,6 +23,9 @@ Game Features:
 6. The scoreboard keeps tracks of wins, losses, and ties for the player each round and displays them for easy reference.
 
 Credits:
+
 The scissors/clover imgage was found on the blog "This Mom's Confessions".
+
 The rock/clover imgage was found on etsy the creater is unknown.
+
 The paper/clover imgage was found on the blog "Easy Hand Made Ideas".
