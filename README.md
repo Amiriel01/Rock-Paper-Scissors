@@ -18,7 +18,7 @@ After Game Completes:
 ***Game Features***
 
 1. The player will see the game title and instructions at the top of the page.
-2. The player chooses the rock, paper, or scissors image. 
+2. The player chooses the rock, paper, or scissors image. The image will increase in size when hovered and the active border will change when clicked to indicate to user the button has been used.
 3. The player will recieve a message for their image choice played against the computer choice. The messages are tailored to each pairing of random choices and return a message letting the player know if they've won, lost, or tied. The reason for the win or loss will be displayed on the screen. Examples: ("You Win! Rock beats scissors everytime!") or ("You Lose! Rock beats Scissors everytime!")
 4. The game will automatically play five rounds as the player chooses their move.
 5. After five rounds the player will be notified if they won, lost, or tied with the computer and given instruction to reload the page to play again.
