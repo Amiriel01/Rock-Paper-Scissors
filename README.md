@@ -11,7 +11,7 @@ Before Game Starts:
 After Player's Move:
 ![](images/completewin.png)
 After Game Completes:
-![](images/completed%20play.png)
+![](images/completed20play.png)
 
 ***Game Features***
 
