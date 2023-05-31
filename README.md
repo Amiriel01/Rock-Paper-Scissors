@@ -1,6 +1,6 @@
 # Rock-Paper-Scissors
 
-Objective:
+**Objective**
 
 I am creating a Rock, Paper, Scissors game to utilize some skills that I've learned in HTML, CSS, and JavaScript. This is my first JavaScript project.
 
@@ -8,10 +8,12 @@ I am creating a Rock, Paper, Scissors game to utilize some skills that I've lear
 
 Before Game Starts:
 ![](images/completedgame.png)
+
 After Player's Move:
-![](images/completewin.png)
+![](images/completedwin.png)
+
 After Game Completes:
-![](images/completed20play.png)
+![](images/completedplay.png)
 
 ***Game Features***
 
