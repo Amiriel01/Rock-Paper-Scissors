@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-image: url(images/background.jpg);
+    background-color: #f1f9ec;
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: Luminari, "Comic Sans MS", sans-serif;
@@ -15,25 +15,30 @@ body {
     font-size: 84px;
     font-weight: 900;
     width: 800px;
-    background-color: #004526;
+    background-color:#50C878;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: rgb(238, 238, 154);
+    color: #014421;
     margin-bottom: 16px;
-    border: 4px solid rgb(238, 238, 154)
+    border: 4px solid #014421;
+    text-shadow: -1px 1px 2px rgb(238, 238, 154),
+				  1px 1px 2px rgb(238, 238, 154),
+				  1px -1px 0 rgb(238, 238, 154),
+				  -1px -1px 0 rgb(238, 238, 154);
 }
 
 .instruct {
+    width: 1200px;
     text-align: center;
     font-size: 48px;
     font-weight: 700;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: #004526;
+    color: #014421;
     background-color: rgb(238, 238, 154);
-    border: 2px solid #004526
+    border: 2px solid #014421;
 }
 
 .button-container {
@@ -71,12 +76,21 @@ body {
 }
 
 button {
+    text-shadow: -1px 1px 2px #014421,
+				  1px 1px 2px #014421,
+				  1px -1px 2px #014421,
+				  -1px -1px 2px #014421;
     border: 8px solid #F0E68C;
     cursor: pointer;
+    outline: 2px solid #014421;
+    font-size: 36px;
+    font-weight: 900;
+    color:rgb(238, 238, 154);
+    
 }
 
 button:active {
-    border: 8px solid #004526;
+    border: 8px solid #FDDA0D;
 }
 
 button:hover {
@@ -84,32 +98,41 @@ button:hover {
 }
 
 #return {
+    width: 1000px;
+    text-shadow: -1px 1px 2px #014421,
+				  1px 1px 2px #014421,
+				  1px -1px 2px #014421,
+				  -1px -1px 2px #014421;
     margin-bottom: 36px;
-    ;
     text-align: center;
     font-size: 48px;
     font-weight: 700;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: #004526;
+    color: #50C878;
     background-color: rgb(238, 238, 154);
-    border: 2px solid #004526
+    border: 2px solid #014421;
 }
 
 .scoreBox {
+    text-shadow: -1px 1px 2px #014421,
+				  1px 1px 2px #014421,
+				  1px -1px 0 #014421,
+				  -1px -1px 0 #014421;
     text-align: center;
     font-size: 48px;
     font-weight: 900;
     width: 800px;
-    background-color: #004526;
+    background-color: #50C878;
     display: block;
     margin-left: auto;
     margin-right: auto;
     color: rgb(238, 238, 154);
     margin-bottom: 16px;
-    border: 4px solid rgb(238, 238, 154)
+    border: 4px solid #014421;
 }
+
 
 #scores {
     display: flex;
