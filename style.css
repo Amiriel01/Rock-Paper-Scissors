@@ -90,7 +90,8 @@ button {
 }
 
 button:active {
-    border: 8px solid #FDDA0D;
+    border: 8px solid #014421;
+    outline: 4px solid  #F0E68C;
 }
 
 button:hover {
